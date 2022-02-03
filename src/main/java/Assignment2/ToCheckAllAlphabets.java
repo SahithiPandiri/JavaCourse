@@ -2,7 +2,10 @@ package Assignment2;
 import java.util.*;
 public class ToCheckAllAlphabets {
     static boolean check(String input){
+<<<<<<< HEAD
         input=input.toLowerCase();
+=======
+>>>>>>> origin/master
         HashSet<Character> hs=new HashSet<>();
         for(int i=0;i<input.length();i++){
             if(Character.isAlphabetic(input.charAt(i)))
@@ -33,7 +36,10 @@ public class ToCheckAllAlphabets {
 
     }
     static boolean checkAllAlphabets(String input){
+<<<<<<< HEAD
         input=input.toLowerCase();
+=======
+>>>>>>> origin/master
         if(input.length()<26){
             return false;
         }
