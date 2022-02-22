@@ -36,13 +36,36 @@ class LinkedList{
         temp3.next=null;
     }
     public static void main(String args[]){
-        for(int i=1;i<=5;i++){
-            create(i);
+        Scanner sc= new Scanner(System.in);
+        while(true) {
+            System.out.println();
+            System.out.println("1.Insert");
+            System.out.println("2.Remove");
+            System.out.println("3.Display");
+            System.out.println("4.End");
+            System.out.println("Enter Choice");
+            int n = sc.nextInt();
+            int k = 0;
+            switch (n) {
+                case 1:
+                    System.out.println("Enter Number to be Inserted");
+                    create(sc.nextInt());
+                    break;
+                case 2:
+                    remove();
+                    break;
+                case 3:
+                    display();
+                    break;
+                case 4:
+                    k = 1;
+                    break;
+            }
+            if (k == 1) {
+                break;
+            }
         }
-        display();
-        remove();
-        System.out.println();
-        display();
+// LinkedList Without Implementing List Interface
     }
 }
 
